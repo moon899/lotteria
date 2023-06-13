@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>LOTTERIA 로그인</title>
+</head>
+
+<style>
+    body {
+        height: 100vh;
+        width: 100vw;
+        background-image:url('/public/lotteria_back.png');
+        background-position : center;
+        background-repeat : no-repeat;
+        background-size : cover ;
+    }
+    div{
+        float: left;
+        text-align: left;
+        width: 25%;
+        justify-content: flex-start;
+        padding: 5px;
+        flex-wrap: wrap;
+    }
+</style>
+
+<body>
+<div>
+    <form action="/process/logout" method="post">
+        <h2>LOTTERIA 로그인되어있습니다.</h2>
+        <input type="submit" name = "" value="로그아웃" style="height: 100px;width: 200px;"></input>
+    </form>
+
+  <h2>LOTTERIA 가장 가까운 위치 찾기 서비스</h2>
+    <table>
+        <input type="button" name = "" value="찾기 서비스" style="height: 100px;width: 200px;" onClick="location.href='/public/distance.html'"></input>
+    </table>
+
+    <form action="/process/menu" method="post">
+        <h2>LOTTERIA MENU</h2>
+        <input type="submit" name="" value="메뉴판" style="height: 100px;width: 200px;"></input>
+    </form>
+</div>
+<div>
+    <form action="/process/market" method="post">
+        <h2>LOTTERIA Market</h2>
+        <input type="submit" name="" value="매장 정보" style="height: 100px;width: 200px;"></input>
+    </form>
+
+    <h2>LOTTERIA Market 추가/삭제</h2>
+    <input type="submit" name="" value="매장 추가/삭제" style="height: 100px;width: 200px;" onClick="location.href='/public/marketAddDelete.html'"></input>
+
+    <h2>LOTTERIA Menu 추가/삭제</h2>
+    <input type="submit" name="" value="메뉴 추가/삭제" style="height: 100px;width: 200px;" onClick="location.href='/public/adddeletehambergur.html'"></input>
+</div>
+</body>
+
+</html>

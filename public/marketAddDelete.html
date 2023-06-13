@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>매장 추가/삭제 </title>
+
+  <style>
+    div{
+        float: left;
+        text-align: left;
+        width: 25%;
+    }
+  </style>
+
+
+
+
+</head>
+<body>
+<div>
+  <h1>매장 추가</h1>
+  <br>
+  <form action="/process/marketAdd" method="post">
+    <table>
+      <tr>
+        <td><label>매장 ID</label></td>
+        <td><input type="text" name="id"></td>
+      </tr>
+
+      <tr>
+        <td><label>매장 이름</label></td>
+        <td><input type="text" name="name"></td>
+      </tr>
+
+      <tr>
+        <td><label>매장 주소</label></td>
+        <td><input type="text" name="address"></td>
+      </tr>
+
+      <tr>
+        <td><label>매장 번호</label></td>
+        <td><input type="text" name="phone"></td>
+      </tr>
+
+      <tr>
+        <td><label>매장 운영시간</label></td>
+        <td><input type="text" name="hours"></td>
+      </tr>
+
+      <tr>
+        <td><label>매장 Latitude</label></td>
+        <td><input type="text" name="latitude"></td>
+      </tr>
+
+      <tr>
+        <td><label>매장 Longitude</label></td>
+        <td><input type="text" name="longitude"></td>
+      </tr>
+    </table>
+    <input type="submit" name="" value="추가">
+  </form>
+</div>
+
+<div>
+  <h1>매장 삭제</h1>
+  <br>
+  <form action="/process/marketDelete" method="post">
+    <table>
+      <tr>
+        <td><label>매장 ID</label></td>
+        <td><input type="text" name="id"></td>
+      </tr>
+    </table>
+    <input type="submit" name="" value="삭제">
+  </form>
+</div>
+
+  <a href="/public/login3.html">메인화면으로</a>
+</body>
+</html>

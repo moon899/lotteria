@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>LOTTERIA 메뉴 추가 </title>
+
+  <style>
+    div{
+        float: left;
+        text-align: left;
+        width: 25%;
+    }
+  </style>
+  
+</head>
+
+<body>
+<div>
+    <h1>LOTTERIA 메뉴 추가</h1>
+    <br>
+    <form action="/process/addmenu" method="post">
+      <table>
+        <tr>
+          <td><label>메뉴 이름</label></td>
+          <td><input type="text" name="name"></td>
+        </tr>
+        <tr>
+          <td><label>가격</label></td>
+          <td><input type="text" name="price"></td>
+        </tr>
+        <tr>
+          <td><label>세트,콤보 가격</label></td>
+          <td><input type="text" name="set_price"></td>
+        </tr>
+        <tr>
+          <td><label>든든점심 가격</label></td>
+          <td><input type="text" name="event_price"></td>
+        </tr>
+      </table>
+      <input type="submit" name="" value="추가">
+    </form>
+</div>
+<div>
+    <h1>LOTTERIA 메뉴 삭제</h1>
+    <br>
+    <form action="/process/deletemenu" method="post">
+      <table>
+        <tr>
+          <td><label>메뉴 이름</label></td>
+          <td><input type="text" name="name"></td>
+        </tr>
+      </table>
+      <input type="submit" name="" value="삭제">
+    </form>
+</div>
+    <input type="button" name="" value="메인으로" onClick="location.href='/public/login3.html'">
+</body>
+</html>
