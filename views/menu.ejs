@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>LOTTERIA 메뉴</title>
+
+
+
+</head>
+<style>
+  div{
+      float: left;
+      justify-content: space-between;
+      align-content: space-evenly;
+      flex-wrap: wrap;
+
+      margin: 5px auto;
+      padding: 40px 10px 10px 10px;
+      max-width: 300px;
+  }
+</style>
+<body>
+    <h2>LOTTERIA 메뉴</h2>
+
+
+    <% for(var i=0; i<menuCount; i++){ %>
+      <div>
+        <img src="/public/햄버거/<%=menuName[i] %>.png"/>
+        <br>메뉴이름: <%= menuName[i] %><br>가격: <%= menuPrice[i] %><br><%= menuSet_price[i] %><br>든든점심가격: <%= menuEvent_price[i] %>
+      </div>
+    <% } %>
+</body>
+<% if(loginPoint == 1) {%>
+    <input type="button" name="" value="메인으로" style="height: 100px;width: 200px;" onClick="location.href='/public/login3.html'">
+  <%} else { %>
+    <input type="button" name="" value="메인으로" style="height: 100px;width: 200px;" onClick="location.href='/public/login2.html'">
+  <% } %>
+</html>
